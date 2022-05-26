@@ -49,7 +49,7 @@ def giveMeIncidentsData():
     df = pd.DataFrame(table_data, columns = table_columns)
     print(df)
 
-    path = 'data.csv'
+    path = 'data/data.csv'
 
     save_to_file = open(path, 'a')
     save_to_file.write(df.to_csv(index=False))
